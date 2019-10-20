@@ -1,0 +1,33 @@
+{
+  "name": "Footprints",
+  "version": "1.0",
+  "description": "Track your carbon footprint.",
+  "permissions": [
+    "activeTab", 
+    "declarativeContent", 
+    "https://cdn.jsdelivr.net/npm/vue/dist/vue.js",
+    "http://*.google.com/maps/dir/*",
+    "https://*.google.com/maps/dir/*"
+  ],
+  "content_security_policy": "script-src 'self' 'unsafe-eval' https://cdn.jsdelivr.net; object-src 'self'",
+  "background": {
+    "scripts": ["background.js"],
+    "persistent": false
+  },
+  "page_action": {
+    "default_popup": "popup.html",
+    "default_icon": {
+      "16": "images/paw16.png",
+      "32": "images/paw32.png",
+      "64": "images/paw64.png",
+      "128": "images/paw128.png"
+    },
+    "icons": {
+      "16": "images/paw16.png",
+      "32": "images/paw32.png",
+      "64": "images/paw64.png",
+      "128": "images/paw128.png"
+    }
+  },
+  "manifest_version": 2
+}

@@ -1,0 +1,108 @@
+<html>
+  <head>
+    <link href="https://unpkg.com/tailwindcss@^1.0/dist/tailwind.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <style>
+      .lds-hourglass {
+        display: inline-block;
+        position: relative;
+        width: 64px;
+        height: 64px;
+      }
+      .lds-hourglass:after {
+        content: " ";
+        display: block;
+        border-radius: 50%;
+        width: 0;
+        height: 0;
+        margin: 6px;
+        box-sizing: border-box;
+        border: 26px solid gray;
+        border-color: gray transparent gray transparent;
+        animation: lds-hourglass 1.2s infinite;
+      }
+      @keyframes lds-hourglass {
+        0% {
+          transform: rotate(0);
+          animation-timing-function: cubic-bezier(0.55, 0.055, 0.675, 0.19);
+        }
+        50% {
+          transform: rotate(900deg);
+          animation-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1);
+        }
+        100% {
+          transform: rotate(1800deg);
+        }
+      }
+    </style>
+    <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+    <script src="hideElem.js"></script>
+  </head>
+  <body>
+    <div id="app" class="container px-2" style="width: 230px; height: 428px;"> 
+      <!-- HEADER -->
+      <header class="block">
+        <img class="block" src="logoFont.png">
+      </header>
+      <hr class="block"/>
+
+      <!-- LANDING SECTION-->
+      <div id="hourglass" class="lds-hourglass" style="margin-left: 75px; margin-top: 150px;"></div>
+      <button id="toggleButton" v-on:click="onPressButton" style="outline: none;"> 
+        <i class="fa fa-paw px-4" style="font-size: 150px; color: 6d4b29; padding-left: 40px; padding-top: 20px;"></i>
+      </button>
+      
+      <div id="logoArrow">
+        <i class="block fa fa-arrow-up" style="font-size: 30px; padding-left: 97px; padding-bottom: 10px;"></i>
+      </div>
+      
+      <p id="textArrow" class="font-mono text-center text-gray-700 py-5 px-5 mx-2 border-2 rounded-full">Click the paw above to see your <br> Carbon Footprint &#128526;</p>
+      
+      
+      <!-- RESULTS SECTION -->
+      <div id="milesContainer" class="mt-3 border-2 rounded-full text-center">
+        <p id="miles" class="flex-1 text-lg text-blue-700"></p> 
+        <!-- <img src="car.svg" class="flex-1" style="height: 40px; width: 40px; margin-right: -80px;"> -->
+      </div>
+
+      <h1 id="mainLine" class="text-gray-800 text-sm pt-5"></h1>
+
+      <div class="text-center">
+        <p id="carbonFootprint" class="inline text-red-600 text-lg"></p> <p id="cfUnit" class="inline text-red-900 text-xs"></p>
+      </div>
+
+      <h1 id="equivalent" class="text-gray-800 text-sm pt-3 pb-2"></h1>
+
+      <div id="equivalentResult">
+        <div class="inline-flex">
+            <img src="house.svg" class="flex-1 img1 pr-2" style="height: 40px; width: 40px;">
+            <p id="homeEnergy" class="flex-2 txt1 text-base pt-3"></p>
+        </div>
+        <div class="inline-flex pt-3">
+          <img src="coal.svg" class="flex-1 img2 pr-2" style="height: 40px; width: 40px;">
+          <p id="coalsBurned" class="flex-2 txt2 text-base"></p>
+        </div>
+        <div class="inline-flex pt-3">
+          <img src="phone.svg" class="flex-1 img3 pr-2" style="height: 40px; width: 40px;">
+          <p id="smartphones" class="flex-2 txt3 text-base"></p>
+        </div>
+      </div>
+
+      <p id="notDriving" class="text-lg text-center" style="padding-bottom: 150px;"></p>
+
+      <!-- FOOTER -->
+      <footer id="footerStart" class="block static bottom-0 bg-gray-900 pt-1 mt-12 font-mono">
+        <p class="text-gray-500 text-center">Made by <a class="text-white" href="https://github.com/mujahidfa">Mujahid Anuar  <img class="inline" style="height: 12px; width: 12px; margin-bottom: 3px;" src="github-icon.png"></a></p>
+      </footer>
+      <footer id="footerLoad" class="block static bottom-0 bg-gray-900 pt-1 font-mono" style="margin-top: 141px;">
+        <p class="text-gray-500 text-center">Tinkered by <a class="text-white" href="https://github.com/mujahidfa">Mujahid Anuar  <img class="inline" style="height: 12px; width: 12px; margin-bottom: 3px;" src="github-icon.png"></a></p>
+      </footer> 
+      <footer id="footerEnd" class="block static bottom-0 bg-gray-900 pt-1 font-mono" style="margin-top: 71px;">
+        <p class="text-gray-500 text-center">Crafted by <a class="text-white" href="https://github.com/mujahidfa">Mujahid Anuar  <img class="inline" style="height: 12px; width: 12px; margin-bottom: 3px;" src="github-icon.png"></a></p>
+      </footer>   
+    
+    </div>
+
+    <script src="popup.js"></script>
+  </body>
+</html>
