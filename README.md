@@ -1,7 +1,6 @@
 <h1 align="center">Footprints</h1>
 A Chrome extension that tells you your potential carbon footprint when using Google Maps. This project was submitted for [MadHacks Carbon 2019](https://www.madhacks.io/) that was held on October 19-20, 2019.  
   
-Link to Devpost submission: https://devpost.com/software/footprints-z4xdm8
   
 ## Inspiration
 I wanted to build something that I would actually use. And small enough for me to do on my own. And looks good.
@@ -26,3 +25,6 @@ I learned that TailwindCSS is amazing, and Chrome API is.. something that I prob
 ## What's next for Footprints
 - To add support for flights and buses/trains/public transport. 
 - To publish it on Chrome App Store so that I can have my friends use it.
+
+
+Link to Devpost submission: https://devpost.com/software/footprints-z4xdm8
