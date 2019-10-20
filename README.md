@@ -1,4 +1,4 @@
-<h1 align="center">Footprints</h1>
+# Footprints
 A Chrome extension that tells you your potential carbon footprint when using Google Maps. 
 
 This project was submitted for [MadHacks Carbon 2019](https://www.madhacks.io/) that was held on October 19-20, 2019.  
