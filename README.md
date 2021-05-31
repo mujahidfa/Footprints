@@ -2,7 +2,7 @@
 A Chrome extension that tells you your potential carbon footprint when using Google Maps. 
 
 This project was submitted for [MadHacks Carbon 2019](https://www.madhacks.io/) that was held on October 19-20, 2019.  
-Edit: it won 3rd place for the Sustainable Hacks category!
+It won [3rd place](https://madhacks-2019.devpost.com/project-gallery)!
   
   
 ## Inspiration
